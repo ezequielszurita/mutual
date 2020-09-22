@@ -109,13 +109,18 @@ h6 {
     color: #fff;
     position: fixed;
     right: 60px;
-    bottom: 39px;
+    bottom: 38px;
     border-radius: 50%;
     line-height: 80px;
     text-align: center;
     z-index: 999;
     transition: all 0.4s;
+}
 
+.btn-store {
+    border-radius: 50%;
+    width: 20%;
+    height: 5vh;
 }
 
 /*--------------------------------------------------------------
@@ -160,14 +165,14 @@ h6 {
     list-style: none;
 }
 
-.nav-menu>ul {
+.nav-menu > ul {
     display: flex;
 }
 
-.nav-menu>ul>li {
+.nav-menu > ul > li {
     position: relative;
     white-space: nowrap;
-    padding: 10px 0 10px 28px;
+    padding: 10px 0 10px 50px;
 }
 
 .nav-menu a {
@@ -182,8 +187,8 @@ h6 {
 }
 
 .nav-menu a:hover,
-.nav-menu .active>a,
-.nav-menu li:hover>a {
+.nav-menu .active > a,
+.nav-menu li:hover > a {
     color: #47b2e4;
 }
 
@@ -202,7 +207,7 @@ h6 {
     transition: 0.3s;
 }
 
-.nav-menu .drop-down:hover>ul {
+.nav-menu .drop-down:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -222,12 +227,12 @@ h6 {
 }
 
 .nav-menu .drop-down ul a:hover,
-.nav-menu .drop-down ul .active>a,
-.nav-menu .drop-down ul li:hover>a {
+.nav-menu .drop-down ul .active > a,
+.nav-menu .drop-down ul li:hover > a {
     color: #47b2e4;
 }
 
-.nav-menu .drop-down>a:after {
+.nav-menu .drop-down > a:after {
     content: "\ea99";
     font-family: IcoFont;
     padding-left: 5px;
@@ -238,17 +243,17 @@ h6 {
     left: calc(100% - 30px);
 }
 
-.nav-menu .drop-down .drop-down:hover>ul {
+.nav-menu .drop-down .drop-down:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
 }
 
-.nav-menu .drop-down .drop-down>a {
+.nav-menu .drop-down .drop-down > a {
     padding-right: 35px;
 }
 
-.nav-menu .drop-down .drop-down>a:after {
+.nav-menu .drop-down .drop-down > a:after {
     content: "\eaa0";
     font-family: IcoFont;
     position: absolute;
@@ -260,11 +265,11 @@ h6 {
         left: -90%;
     }
 
-    .nav-menu .drop-down .drop-down:hover>ul {
+    .nav-menu .drop-down .drop-down:hover > ul {
         left: -100%;
     }
 
-    .nav-menu .drop-down .drop-down>a:after {
+    .nav-menu .drop-down .drop-down > a:after {
         content: "\ea9d";
     }
 }
@@ -347,13 +352,13 @@ h6 {
 }
 
 .mobile-nav a:hover,
-.mobile-nav .active>a,
-.mobile-nav li:hover>a {
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
     color: #47b2e4;
     text-decoration: none;
 }
 
-.mobile-nav .drop-down>a:after {
+.mobile-nav .drop-down > a:after {
     content: "\ea99";
     font-family: IcoFont;
     padding-left: 10px;
@@ -361,11 +366,11 @@ h6 {
     right: 15px;
 }
 
-.mobile-nav .active.drop-down>a:after {
+.mobile-nav .active.drop-down > a:after {
     content: "\eaa1";
 }
 
-.mobile-nav .drop-down>a {
+.mobile-nav .drop-down > a {
     padding-right: 35px;
 }
 
@@ -583,7 +588,7 @@ section {
 }
 
 .section-title h2::before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 120px;
@@ -594,7 +599,7 @@ section {
 }
 
 .section-title h2::after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 40px;
@@ -655,7 +660,7 @@ section {
     position: relative;
 }
 
-.about .content ul li+li {
+.about .content ul li + li {
     margin-top: 10px;
 }
 
@@ -734,7 +739,7 @@ section {
     list-style: none;
 }
 
-.why-us .accordion-list li+li {
+.why-us .accordion-list li + li {
     margin-top: 15px;
 }
 
@@ -795,7 +800,6 @@ section {
 }
 
 @media (max-width: 1024px) {
-
     .why-us .content,
     .why-us .accordion-list {
         padding-left: 0;
@@ -880,7 +884,7 @@ section {
 .skills .progress-bar {
     width: 1px;
     height: 10px;
-    transition: .9s;
+    transition: 0.9s;
     background-color: #4668a2;
 }
 
@@ -933,7 +937,8 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("img/cta-bg.jpg") fixed center center;
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+        url("img/cta-bg.jpg") fixed center center;
     background-size: cover;
     padding: 120px 0;
 }
@@ -1120,7 +1125,7 @@ section {
 }
 
 .team .member span::after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 50px;
@@ -1167,7 +1172,7 @@ section {
     color: #fff;
 }
 
-.team .member .social a+a {
+.team .member .social a + a {
     margin-left: 8px;
 }
 
@@ -1309,7 +1314,7 @@ section {
     list-style: none;
 }
 
-.faq .faq-list li+li {
+.faq .faq-list li + li {
     margin-top: 15px;
 }
 
@@ -1485,7 +1490,7 @@ section {
     font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
     margin-top: 25px;
 }
 
@@ -1603,11 +1608,11 @@ section {
     font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
     padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
     display: inline-block;
     padding-right: 10px;
     color: #4668a2;
@@ -1673,7 +1678,7 @@ section {
     font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
     margin-top: 10px;
 }
 
