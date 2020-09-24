@@ -5,6 +5,8 @@
 
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="csrf_token" content="{{ csrf_token() }}" />
+
 
     <title>Mutual Congreso de Tucumán</title>
     <meta content="" name="description">
@@ -20,6 +22,7 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="icofont/icofont.min.css" rel="stylesheet">
     <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -29,12 +32,13 @@
     <link href="aos/aos.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/style.css" rel="stylesheet">     
 
 </head>
 
 <body>
+@include('flash::message')
+
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top ">
@@ -49,25 +53,8 @@
                     <li><a href="#benefits">Descuentos</a></li>
                     <li><a href="#adheredbusinesses">Comercios Adheridos</a></li>
                     <li><a href="https://mcdivisionelectro.mitiendanube.com" target="_blank">Tienda</a></li>
-                    <!-- <li><a href="#team">Institucional</a></li> -->
                     <li><a href="#contact">Contacto</a></li>
-                    <!-- <li class="drop-down"><a href="">Institucional</a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="drop-down"><a href="#">Deep Drop Down</a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                        </ul>
-                    </li>-->
+
 
                 </ul>
             </nav><!-- .nav-menu -->
@@ -77,6 +64,8 @@
 
         </div>
     </header><!-- End Header -->
+
+    
 
     <!-- ======= Preview ======= -->
 
@@ -193,7 +182,11 @@
                                             class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
                                         <p>
-                                            Nos focalizamos en optimizar nuestras prestaciones y servicios expandiéndonos en forma reciproca a lo largo y a lo ancho del país. Contamos con una cartera de comercios adheridos en todos los rubros los cuales nos brindan descuentos y ordenes de compra exclusivos a todos nuestros asociados. 
+                                            Nos focalizamos en optimizar nuestras prestaciones y servicios
+                                            expandiéndonos en forma reciproca a lo largo y a lo ancho del país. Contamos
+                                            con una cartera de comercios adheridos en todos los rubros los cuales nos
+                                            brindan descuentos y ordenes de compra exclusivos a todos nuestros
+                                            asociados.
                                         </p>
                                     </div>
                                 </li>
@@ -204,7 +197,11 @@
                                             class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
                                         <p>
-                                            Queremos estar presentes en los momentos más importantes y sensibles de tu vida, es por ello que brindamos a todos nuestros asociados subsidios por nacimiento, matrimonio y fallecimiento. Tenemos diversos centros de capacitaciones pensado para el desarrollo laboral y profesional de nuestros asociados. Ayuda escolar y sorteos mensuales.
+                                            Queremos estar presentes en los momentos más importantes y sensibles de tu
+                                            vida, es por ello que brindamos a todos nuestros asociados subsidios por
+                                            nacimiento, matrimonio y fallecimiento. Tenemos diversos centros de
+                                            capacitaciones pensado para el desarrollo laboral y profesional de nuestros
+                                            asociados. Ayuda escolar y sorteos mensuales.
                                         </p>
                                     </div>
                                 </li>
@@ -233,20 +230,25 @@
 
                         <div class="section-title col-lg-12">
                             <h2>Mutual Congreso de Tucumán ahora más cerca tuyo.</h2>
-                            </h2>Con nuestra aplicación móvil disponible para plataformas Android y Apple podras estar en contacto permanente con nosotros: Consultar tu cuenta corriente, canjear cupones de descuentos para comprar en todos nuestros comercios adheridos y estar actualizado de todas las novedades que tenemos para vos.</h2>
+                            </h2>Con nuestra aplicación móvil disponible para plataformas Android y Apple podras estar
+                            en contacto permanente con nosotros: Consultar tu cuenta corriente, canjear cupones de
+                            descuentos para comprar en todos nuestros comercios adheridos y estar actualizado de todas
+                            las novedades que tenemos para vos.</h2>
                         </div>
                         <table>
                             <tr>
-                                <td></td><td></td>
+                                <td></td>
+                                <td></td>
                                 <td> <a href="https://play.google.com/store/apps/details?id=ar.com.ingeit.mutualCongreso"
                                         target="_blank">
                                         <img src="img/playstore2.svg" alt=""></a>
-                                    </td>
-                                    <td></td>
+                                </td>
+                                <td></td>
                                 <td> <a href="https://apps.apple.com/ar/app/mutual-congreso/id1500813233"
                                         target="_blank"><img src="img/app-store.svg" alt=""></a>
-                                    </td>
-                                    <td></td><td></td>
+                                </td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </table>
                     </div>
@@ -523,9 +525,7 @@
                 <div class="row">
                     <div class="col-lg-9 text-center text-lg-left">
                         <h3>Asociate</h3>
-                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum.</p>
+                        <p>¿Qué esperas para asociarte? Disfruta de atención personalizada y de todos nuestros beneficios!</p>
                     </div>
                     <div class="col-lg-3 cta-btn-container text-center">
                         <a class="cta-btn align-middle" href="https://afiliacion.mutualcongreso.com.ar/?source=social"
@@ -578,7 +578,9 @@
                     </div>
 
                     <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  
+                        <form action="{{ route('contacto')}}" method="post" role="form" class="php-email-form">
+                        @csrf
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="name">Nombre y Apellido</label>
@@ -601,15 +603,14 @@
                             </div>
                             <div class="form-group">
                                 <label for="name">Mensaje</label>
-                                <textarea class="form-control" name="message" rows="10" data-rule="required"
+                                <textarea class="form-control" name="message" id="message" rows="10" data-rule="required"
                                     data-msg="Describa su inquietud"></textarea>
                                 <div class="validate"></div>
                             </div>
                             <div class="mb-3">
                                 <div class="loading">Loading</div>
-                                <div class="error-message"></div>
                                 <div class="sent-message">Tu mensaje ah sido Enviado, gracias!</div>
-                            </div>
+                            </div>                         
                             <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
                         </form>
                     </div>
@@ -619,7 +620,8 @@
             </div>
         </section><!-- End Contact Section -->
 
-    </main><!-- End #main -->
+
+    <!-- End #main -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -709,13 +711,24 @@
     <!-- Template Main JS File -->
 
     <script src="js/main.js"></script>
-    <script>(function (p) {
-var s = document.createElement('script');
-s.src = 'https://call-widget.toky.co/toky-call-widget';
-s.onload = function () { Toky("boot", p); };
-document.head.appendChild(s);
-})({"$lang":"es","$username":"MutualCongreso","$position":"left","$text":"Llámanos Gratis","$color":"white","$radio":"22"})
-</script>
+    <script>
+        (function (p) {
+            var s = document.createElement('script');
+            s.src = 'https://call-widget.toky.co/toky-call-widget';
+            s.onload = function () {
+                Toky("boot", p);
+            };
+            document.head.appendChild(s);
+        })({
+            "$lang": "es",
+            "$username": "MutualCongreso",
+            "$position": "left",
+            "$text": "Llámanos Gratis",
+            "$color": "white",
+            "$radio": "22"
+        })
+
+    </script>   
 
 </body>
 

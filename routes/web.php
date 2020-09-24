@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+
+Route::get('/','FrontController@index')->name('home');
+
+Route::post('/contacto','MessagesController@store')->name('contacto');
