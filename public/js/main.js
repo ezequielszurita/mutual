@@ -1,3 +1,20 @@
+// para llamadas ip sobre toky
+(function (p) {
+    var s = document.createElement('script');
+    s.src = 'https://call-widget.toky.co/toky-call-widget';
+    s.onload = function () {
+        Toky("boot", p);
+    };
+    document.head.appendChild(s);
+})({
+    "$lang": "es",
+    "$username": "MutualCongreso",
+    "$position": "left",
+    "$text": "Llámanos Gratis",
+    "$color": "white",
+    "$radio": "22"
+});
+
 !(function ($) {
     "use strict";
 
@@ -195,20 +212,3 @@
     });
 
 })(jQuery);
-
-
-(function (p) {
-    var s = document.createElement('script');
-    s.src = 'https://call-widget.toky.co/toky-call-widget';
-    s.onload = function () {
-        Toky("boot", p);
-    };
-    document.head.appendChild(s);
-})({
-    "$lang": "es",
-    "$username": "MutualCongreso",
-    "$position": "left",
-    "$text": "Llámanos Gratis",
-    "$color": "white",
-    "$radio": "22"
-})

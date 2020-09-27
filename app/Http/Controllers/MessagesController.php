@@ -19,7 +19,7 @@ class MessagesController extends Controller
      $message = $request;
     // puedo agregar validaciones
     
-    Mail::to('ezequielszurita@gmail.com')->send(new MessageReceived($message));
-   //Mail::to('contacto@mutualcongreso.com.ar')->send(new MessageReceived($message));
+    //Mail::to('ezequielszurita@gmail.com')->send(new MessageReceived($message));
+   Mail::to('contacto@mutualcongreso.com.ar')->send(new MessageReceived($message));
     }
 }
