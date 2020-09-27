@@ -22,7 +22,6 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="icofont/icofont.min.css" rel="stylesheet">
     <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -33,13 +32,9 @@
 
     <!-- Template Main CSS File -->
     <link href="css/style.css" rel="stylesheet">     
-
 </head>
 
 <body>
-@include('flash::message')
-
-
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
@@ -237,18 +232,17 @@
                         </div>
                         <table>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                
                                 <td> <a href="https://play.google.com/store/apps/details?id=ar.com.ingeit.mutualCongreso"
                                         target="_blank">
                                         <img src="img/playstore2.svg" alt=""></a>
                                 </td>
                                 <td></td>
+                               
                                 <td> <a href="https://apps.apple.com/ar/app/mutual-congreso/id1500813233"
                                         target="_blank"><img src="img/app-store.svg" alt=""></a>
                                 </td>
-                                <td></td>
-                                <td></td>
+                                
                             </tr>
                         </table>
                     </div>
@@ -269,9 +263,7 @@
 
                 <div class="section-title">
                     <h2>Descuentos</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Enterate en esta sección de nuestros ultimos descuentos disponibles!</p>
                 </div>
 
 
@@ -551,19 +543,19 @@
                         <div class="info">
                             <div class="address">
                                 <i class="icofont-google-map"></i>
-                                <h4>Direccion: Lamadrid 456 3A</h4>
-                                <p>SM de Tucuman, Tucuman, CP 4000</p>
+                                <h4>Dirección: Lamadrid 456 3A</h4>
+                                <p>SM de Tucumán, Tucumán, CP 4000</p>
                             </div>
 
                             <div class="email">
                                 <i class="icofont-envelope"></i>
-                                <h4>Correo Electronico:</h4>
+                                <h4>Correo Electrónico:</h4>
                                 <p>info@mutualcongreso.com.ar</p>
                             </div>
 
                             <div class="phone">
                                 <i class="icofont-phone"></i>
-                                <h4>Telefono:</h4>
+                                <h4>Teléfono :</h4>
                                 <a href="http://wa.me/543816049771" target="_blank">
                                     <p>+54 9 381 604 9771</p>
                                 </a></p>
@@ -585,13 +577,27 @@
                                 <div class="form-group col-md-6">
                                     <label for="name">Nombre y Apellido</label>
                                     <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4"
-                                        data-msg="Ingrese al Menos Caracteres" />
+                                        data-msg="Ingrese al Menos 4 Caracteres" />
                                     <div class="validate"></div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="name">Correo Electronico</label>
+                                    <label for="name">Correo Electrónico</label>
                                     <input type="email" class="form-control" name="email" id="email" data-rule="email"
                                         data-msg="Por favor ingrese un Correo Valido" />
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Código de Área</label>
+                                    <input type="number" name="codarea" class="form-control" id="codarea" data-rule="minlen:3"
+                                        data-msg="Ingrese su código de area sin el 0" />
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="name">Teléfono</label>
+                                    <input type="number" class="form-control" name="phone" id="phone" data-rule="minlen:7"
+                                        data-msg="Ingrese su número Fijo o Celular sin el 15" />
                                     <div class="validate"></div>
                                 </div>
                             </div>
@@ -608,9 +614,10 @@
                                 <div class="validate"></div>
                             </div>
                             <div class="mb-3">
-                                <div class="loading">Loading</div>
+                                <div class="loading">Enviando</div>
+                                <div class="error-message"></div>
                                 <div class="sent-message">Tu mensaje ah sido Enviado, gracias!</div>
-                            </div>                         
+                            </div>
                             <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
                         </form>
                     </div>
@@ -634,15 +641,15 @@
                         <h3>Mutual Congreso</h3>
                         <p>
                             Lamadrid 456 3A <br>
-                            SM de Tucuman<br>
-                            Tucuman Argentina <br><br>
-                            <strong>Telefono:</strong> +54 9 381 4585 1055<br>
-                            <strong>Correo Electronico:</strong> info@mutualcongreso.com<br>
+                            SM de Tucumán<br>
+                            Tucumán Argentina <br><br>
+                            <strong>Teléfono:</strong> +54 9 381 4585 1055<br>
+                            <strong>Correo Electrónico:</strong> info@mutualcongreso.com<br>
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Enlaces Utiles</h4>
+                        <h4>Enlaces Útiles</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="#hero">Inicio</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#about">Nosotros</a></li>
@@ -659,17 +666,17 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Escribinos para conocer sobre</h4>
+                        <h4>Escribinos en la sección de contacto para conocer sobre</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Prestamos</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Legal</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Asesoria</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#contacto">Prestamos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#contacto">Legal</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#contacto">Asesoria</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Redes Sociales</h4>
-                        <p>Seguinos en nuestras redes para enterarte de los ultimos beneficios</p>
+                        <p>Seguinos en nuestras redes para enterarte de las últimas noticias</p>
                         <div class="social-links mt-3">
                             <a href="https://www.facebook.com/MutualCongreso/" target="_blank" class="facebook"><i
                                     class="bx bxl-facebook"></i></a>
@@ -687,7 +694,7 @@
                 &copy; Copyright <strong><span>Mutual Congreso</span></strong>. Todos los derechos Reservados
             </div>
             <div class="credits">
-                Realizado por <a href="">Ezequiel</a>
+                Realizado por <a href="wa.me/543814407055">Ezequiel</a>
             </div>
         </div>
     </footer><!-- End Footer -->
@@ -701,8 +708,8 @@
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="jquery.easing/jquery.easing.min.js"></script>
-    <script src="php-email-form/validate.js"></script>
     <script src="waypoints/jquery.waypoints.min.js"></script>
+    <script src="php-email-form/validate.js"></script>
     <script src="isotope-layout/isotope.pkgd.min.js"></script>
     <script src="venobox/venobox.min.js"></script>
     <script src="owl.carousel/owl.carousel.min.js"></script>
@@ -711,24 +718,7 @@
     <!-- Template Main JS File -->
 
     <script src="js/main.js"></script>
-    <script>
-        (function (p) {
-            var s = document.createElement('script');
-            s.src = 'https://call-widget.toky.co/toky-call-widget';
-            s.onload = function () {
-                Toky("boot", p);
-            };
-            document.head.appendChild(s);
-        })({
-            "$lang": "es",
-            "$username": "MutualCongreso",
-            "$position": "left",
-            "$text": "Llámanos Gratis",
-            "$color": "white",
-            "$radio": "22"
-        })
-
-    </script>   
+  
 
 </body>
 
