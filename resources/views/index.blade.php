@@ -29,9 +29,8 @@
     <link href="venobox/venobox.css" rel="stylesheet">
     <link href="owl.carousel/owl.carousel.min.css" rel="stylesheet">
     <link href="aos/aos.css" rel="stylesheet">
-
     <!-- Template Main CSS File -->
-    <link href="css/style.css" rel="stylesheet">     
+    <link href="css/style.css" rel="stylesheet">   
 </head>
 
 <body>
@@ -60,8 +59,6 @@
         </div>
     </header><!-- End Header -->
 
-    
-
     <!-- ======= Preview ======= -->
 
     <section id="hero" class="d-flex align-items-center">
@@ -86,6 +83,11 @@
             </div>
         </div>
     </section><!-- End Preview -->
+
+    <div id="splashscreen">
+        <a href="http://localhost/#" class="enter_link">
+        <img class="logopopup" src="img/promo.jpg"></a>
+    </div>
 
     <div class="btn-whatsapp">
         <a href="https://wa.me/543816049771" target="_blank">
@@ -694,7 +696,7 @@
                 &copy; Copyright <strong><span>Mutual Congreso</span></strong>. Todos los derechos Reservados
             </div>
             <div class="credits">
-                Realizado por <a href="wa.me/543814407055">Ezequiel</a>
+                Realizado por <a href="http://wa.me/543814407055"target="_blank">Ezequiel</a>
             </div>
         </div>
     </footer><!-- End Footer -->
@@ -718,6 +720,7 @@
     <!-- Template Main JS File -->
 
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
