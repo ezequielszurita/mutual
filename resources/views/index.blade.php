@@ -85,7 +85,7 @@
     </section><!-- End Preview -->
 
     <div id="splashscreen">
-        <a href="http://localhost/#" class="enter_link">
+        <a href="https://www.mutualcongreso.com.ar/#" class="enter_link">
         <img class="logopopup" src="img/promo.jpg"></a>
     </div>
 
@@ -589,19 +589,11 @@
                                     <div class="validate"></div>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="name">Código de Área</label>
-                                    <input type="number" name="codarea" class="form-control" id="codarea" data-rule="minlen:3"
-                                        data-msg="Ingrese su código de area sin el 0" />
-                                    <div class="validate"></div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="name">Teléfono</label>
-                                    <input type="number" class="form-control" name="phone" id="phone" data-rule="minlen:7"
+                            <div class="form-group">
+                            <label for="name">Teléfono</label>
+                                    <input type="number" class="form-control" name="phone" id="phone" data-rule="minlen:10"
                                         data-msg="Ingrese su número Fijo o Celular sin el 15" />
                                     <div class="validate"></div>
-                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="name">Asunto</label>

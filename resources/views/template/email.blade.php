@@ -10,7 +10,7 @@
 <body>
         <p> <strong> Recibiste un mensaje de:</strong>  {{$msg['name'] }} - {{$msg['email'] }} </p>
 
-        <p> <strong>Número de Contacto:</strong> {{$msg['codarea'] }}{{$msg['phone'] }} </p>
+        <p> <strong>Número de Contacto:</strong>{{$msg['phone'] }} </p>
 
         <p><strong> Asunto: </strong> {{$msg['subject'] }}</p><br><br>
         
