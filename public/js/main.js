@@ -36,7 +36,7 @@
     ) {
         if (
             location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
+            this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);
@@ -48,8 +48,7 @@
                     scrollto = 0;
                 }
 
-                $("html, body").animate(
-                    {
+                $("html, body").animate({
                         scrollTop: scrollto,
                     },
                     1500,
@@ -81,8 +80,7 @@
             var initial_nav = window.location.hash;
             if ($(initial_nav).length) {
                 var scrollto = $(initial_nav).offset().top - scrolltoOffset;
-                $("html, body").animate(
-                    {
+                $("html, body").animate({
                         scrollTop: scrollto,
                     },
                     1500,
@@ -185,8 +183,7 @@
     });
 
     $(".back-to-top").click(function () {
-        $("html, body").animate(
-            {
+        $("html, body").animate({
                 scrollTop: 0,
             },
             1500,
@@ -201,8 +198,7 @@
             $(".progress .progress-bar").each(function () {
                 $(this).css("width", $(this).attr("aria-valuenow") + "%");
             });
-        },
-        {
+        }, {
             offset: "80%",
         }
     );

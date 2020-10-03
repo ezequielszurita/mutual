@@ -84,8 +84,8 @@
         </div>
     </section><!-- End Preview -->
 
-    <div id="splashscreen">
-        <a href="https://www.mutualcongreso.com.ar/#" class="enter_link">
+    <!-- <div id="splashscreen">
+        <a href="http://localhost/#" class="enter_link">
         <img class="logopopup" src="img/promo.jpg"></a>
     </div>
 
@@ -93,7 +93,7 @@
         <a href="https://wa.me/543816049771" target="_blank">
             <img src="img/btn_whatsapp.svg" alt="">
         </a>
-    </div>
+    </div> -->
 
     <main id="main">
 
